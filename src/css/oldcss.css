@@ -1,0 +1,225 @@
+
+
+
+:root {
+  --font1: "Almarai", sans-serif;
+  --font2: "Grenze", serif;
+  --font3: "Big Shoulders Stencil Text", cursive;
+  --font4: "Sofia Sans Extra Condensed", sans-serif;
+  --textColor: rgba(0, 0, 0, 0.6);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(177, 177, 177);
+
+  background: radial-gradient(
+    circle at center,
+    rgb(255, 254, 254) 0%,
+    rgb(175, 183, 209) 100%
+  );
+  font-family: var(--font1);
+  color: var(--textColor);
+}
+
+h1 {
+  font-size: 160px;
+}
+
+/* Navbar */
+
+.navbar {
+  position: absolute;
+  top: 40px;
+  left: 80px;
+}
+
+.navbarul > a {
+  text-decoration: none;
+  color: var(--textColor);
+  margin-right: 20px;
+}
+
+/* Marquee */
+
+.marquee {
+  margin-top: 480px;
+  position: relative;
+  width: 100vw;
+  max-width: 100%;
+  height: 230px;
+  overflow: hidden;
+}
+
+.track {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 40s linear infinite;
+}
+
+.content {
+  font-size: 160px;
+  font-weight: 800;
+  color: var(--textColor);
+}
+
+.sign,
+.bigNumbers {
+  display: inline;
+  overflow: hidden;
+}
+
+.sign {
+  font-size: 100px;
+}
+
+.bigNumbers {
+  font-family: var(--font2);
+  font-size: 220px;
+  line-height: 1;
+  padding: 0;
+  padding-top: -30px;
+  text-indent: -6px;
+  background: transparent;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.myprofession {
+  position: absolute;
+  bottom: 45px;
+  left: 80px;
+}
+
+/* Cursors */
+
+.cursorX,
+.cursorY {
+  font-family: var(--font4);
+}
+
+.cursorX {
+  font-size: 10px;
+  position: absolute;
+  top: 40px;
+  right: 80px;
+}
+
+.cursorY {
+  font-size: 10px;
+  position: absolute;
+  top: 60px;
+  right: 75px;
+  writing-mode: vertical-rl;
+}
+
+/* Socials */
+
+.socials {
+  position: absolute;
+  bottom: 50px;
+  right: 80px;
+}
+
+.socials > a {
+  text-decoration: none;
+  color: var(--textColor);
+  margin-right: 20px;
+}
+
+/* Buttons */
+
+.allButtons {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Almarai", sans-serif;
+  z-index: 1;
+}
+
+.createButtons {
+  top: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.createButtons > p {
+  padding: 20px;
+  color: var(--textColor);
+}
+
+.createButton {
+  padding: 10px 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: "Almarai", sans-serif;
+  padding: 0;
+  color: var(--textColor);
+}
+
+#resetButton {
+  padding: 0;
+}
+
+/* Canvas */
+
+/* .webgl {
+  position: fixed;
+  top: 0;
+  right: 0;
+  outline: none;
+  z-index: -1;
+}
+
+.webgl2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  outline: none;
+  z-index: 0;
+} */
+
+.click1,
+.click2,
+.reset {
+  /* color: black; */
+  font-size: 12px;
+  z-index: 100;
+  /* writing-mode: vertical-rl;
+  transform: rotate(180deg); */
+}
+
+.click1 {
+  position: absolute;
+  top: 240px;
+  left: 127px;
+}
+
+.click2 {
+  position: absolute;
+  top: 330px;
+  left: 127px;
+}
+
+.reset {
+  position: absolute;
+  top: 410px;
+  left: 127px;
+}

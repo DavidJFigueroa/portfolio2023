@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Almarai", sans-serif;
+  }
+}
+
+@layer utilities {
+  .toggle-btn {
+    @apply [&>div::before]:translate-y-0 [&>div::before]:rotate-45
+    [&>div::after]:translate-y-0 [&>div::after]:-rotate-45 [&>div]:bg-transparent 
+    [&>div]:rotate-[720deg];
+  }
+}
+
+.radial-gray {
+  background: radial-gradient(rgb(255, 254, 254) 0%, rgb(175, 183, 209) 100%);
+}
+
+@property --num {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+@keyframes counter {
+  from {
+    --num: 0;
+  }
+  to {
+    --num: 100;
+  }
+}
+
+/* @keyframes slideOut {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+    display: none;
+  }
+} */
+
+@keyframes slideOut {
+  0% {
+    transform: translateX(0); /* Start from current position */
+  }
+  100% {
+    transform: translateX(-100%); /* Slide out to the left */
+    display: none;
+  }
+}
