@@ -19,11 +19,13 @@ const scene = new THREE.Scene();
  */
 const loadingManager = new THREE.LoadingManager();
 const textureLoader = new THREE.TextureLoader(loadingManager);
-const blobTexture = textureLoader.load("/textures/aigenerated/main1.jpg");
-const child1Texture = textureLoader.load("/textures/aigenerated/child2.jpg");
-const child2Texture = textureLoader.load("/textures/aigenerated/child1.jpg");
+const base = import.meta.env.BASE_URL; 
 
-const bumpMap = textureLoader.load("/textures/rock/rock_bumpmap.jpg");
+const blobTexture = textureLoader.load(`${base}textures/aigenerated/main1.jpg`);
+const child1Texture = textureLoader.load(`${base}textures/aigenerated/child2.jpg`);
+const child2Texture = textureLoader.load(`${base}textures/aigenerated/child1.jpg`);
+
+const bumpMap = textureLoader.load(`${base}textures/rock/rock_bumpmap.jpg`);
 
 
 const noise = new createNoise3D();

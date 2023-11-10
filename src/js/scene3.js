@@ -33,7 +33,9 @@ const initScene3 = () => {
    */
   const loadingManager = new THREE.LoadingManager();
   const textureLoader = new THREE.TextureLoader(loadingManager);
-  const colorTexture = textureLoader.load("/textures/aigenerated/child11.jpg");
+  const base = import.meta.env.BASE_URL; 
+  const colorTexture = textureLoader.load(`${base}textures/aigenerated/child11.jpg`);
+
 
   colorTexture.repeat.x = 1;
   colorTexture.repeat.y = 1;
@@ -44,23 +46,24 @@ const initScene3 = () => {
   colorTexture.minFilter = THREE.NearestFilter;
 
   const cubeTextureLoader = new THREE.CubeTextureLoader();
+  
 
   const environmentMap = cubeTextureLoader.load([
-    "/textures/environmentMaps/5/px.jpg",
-    "/textures/environmentMaps/5/nx.jpg",
-    "/textures/environmentMaps/5/py.jpg",
-    "/textures/environmentMaps/5/ny.jpg",
-    "/textures/environmentMaps/5/pz.jpg",
-    "/textures/environmentMaps/5/nz.jpg",
+    `${base}textures/environmentMaps/5/px.jpg`,
+    `${base}textures/environmentMaps/5/nx.jpg`,
+    `${base}textures/environmentMaps/5/py.jpg`,
+    `${base}textures/environmentMaps/5/ny.jpg`,
+    `${base}textures/environmentMaps/5/pz.jpg`,
+    `${base}textures/environmentMaps/5/nz.jpg`,
   ]);
 
   const environmentMap2 = cubeTextureLoader.load([
-    "/textures/environmentMaps/2/px.jpg",
-    "/textures/environmentMaps/2/nx.jpg",
-    "/textures/environmentMaps/2/py.jpg",
-    "/textures/environmentMaps/2/ny.jpg",
-    "/textures/environmentMaps/2/pz.jpg",
-    "/textures/environmentMaps/2/nz.jpg",
+    `${base}textures/environmentMaps/2/px.jpg`,
+    `${base}textures/environmentMaps/2/nx.jpg`,
+    `${base}textures/environmentMaps/2/py.jpg`,
+    `${base}textures/environmentMaps/2/ny.jpg`,
+    `${base}textures/environmentMaps/2/pz.jpg`,
+    `${base}textures/environmentMaps/2/nz.jpg`,
   ]);
 
   /**

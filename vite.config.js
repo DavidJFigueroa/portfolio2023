@@ -9,7 +9,7 @@ const root = resolve(__dirname, "src");
 export default defineConfig({
   root,
   publicDir: "../static/",
-  base: "/portfolio/",
+  base: "/portfolio2023/",
   server: {
     host: true,
     open: !isCodeSandbox,

@@ -8,7 +8,8 @@
     "dev": "vite",
     "build": "vite build",
     "tailwind": "npx tailwindcss -i ./src/css/index.css -o ./src/css/output.css --watch",
-    "prettier": "npx prettier --write **/*.html"
+    "prettier": "npx prettier --write **/*.html",
+    "preview": "vite preview --port 8080"
   },
   "author": "",
   "license": "ISC",
