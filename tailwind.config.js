@@ -29,13 +29,11 @@ module.exports = {
         texture8: "url('../images/bgtexture8.jpg')",
         texture12: "url('../images/bgtexture12.jpg')",
         texture13: "url('../images/bgtexture13.jpg')",
-  
       },
       zIndex: {
         n1: -1,
       },
       colors: {
-       
         // bgcolor1: "#EDD7BB",
         bgcolor1: "#E4E4E4",
         bgcolor2: "#9C2CC3",
@@ -72,5 +70,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require("flowbite/plugin")],
+  plugins: [require("flowbite/plugin"), require("postcss-100vh-fix")],
 };

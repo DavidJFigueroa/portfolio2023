@@ -451,10 +451,13 @@ barba.init({
       namespace: "aboutme",
       beforeEnter() {
         initScene4();
-        // initAboutme();
+        document.body.classList.remove("overflow-hidden");
       },
       after() {
         body.classList.remove("overflow-hidden");
+      },
+      beforeLeave({ current }) {
+        document.body.classList.add("overflow-hidden");
       },
     },
     {
