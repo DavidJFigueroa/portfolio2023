@@ -188,16 +188,16 @@ const animationEnterAboutMe = (container) => {
       duration: 0.05,
       stagger: 0.1,
     })
-    // .from(".octopus", {
-    //   xPercent: -151,
-    //   duration: 0.3,
-    // })
-    // .from(".outline-title-yellow", {
-    //   xPercent: 151,
-    //   duration: 0.3,
-    // })
+    .from(".octopus", {
+      xPercent: -151,
+      duration: 0.3,
+    })
+    .from(".outline-title-yellow", {
+      xPercent: 151,
+      duration: 0.3,
+    })
 
-    // .from("p", { yPercent: 100, duration: 0.2 });
+    .from(".introduction", { yPercent: 100, duration: 0.2 });
 };
 
 const animationEnterSkills = (container) => {
