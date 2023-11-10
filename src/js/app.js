@@ -130,6 +130,41 @@ const animationEnterHome = (container) => {
     );
 };
 
+// const animationEnterAboutMe = (container) => {
+//   const navElements = document.querySelectorAll(".navelement");
+
+//   const tl = gsap.timeline();
+
+//   tl.fromTo(
+//     container,
+//     {
+//       duration: 1,
+//       autoAlpha: 0,
+//     },
+//     {
+//       autoAlpha: 1,
+
+//       ease: "power4.out",
+//     },
+//   )
+//     .from(navElements, {
+//       opacity: 0,
+//       yPercent: 101,
+//       duration: 0.05,
+//       stagger: 0.1,
+//     })
+//     .from(".octopus", {
+//       x: -1200,
+//       duration: 0.3,
+//     })
+//     .from(".outline-title-yellow", {
+//       x: 1200,
+//       duration: 0.3,
+//     })
+
+//     .from("p", { yPercent: 2000, duration: 0.2 });
+// };
+
 const animationEnterAboutMe = (container) => {
   const navElements = document.querySelectorAll(".navelement");
 
@@ -154,15 +189,15 @@ const animationEnterAboutMe = (container) => {
       stagger: 0.1,
     })
     .from(".octopus", {
-      x: -1200,
+      xPercent: -151,
       duration: 0.3,
     })
     .from(".outline-title-yellow", {
-      x: 1200,
+      xPercent: 151,
       duration: 0.3,
     })
 
-    .from("p", { yPercent: 2000, duration: 0.2 });
+    .from("p", { yPercent: 100, duration: 0.2 });
 };
 
 const animationEnterSkills = (container) => {
