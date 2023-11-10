@@ -2,7 +2,8 @@ import * as THREE from "three";
 import {OrbitControls} from "three/examples/jsm/controls/OrbitControls.js";
 import * as dat from "lil-gui";
 
-/**
+const initScene2 = () => {
+  /**
  * Base
  */
 
@@ -19,10 +20,10 @@ const scene = new THREE.Scene();
  * Objects
  */
 let params = {
-  color: 0x9e9e9e,
-
+  color: 0x00000,
+  // color: new THREE.Color("rgb(93,68,108)").convertSRGBToLinear(),
   // hovercolor: 0xffffff,
-  hovercolor: 0xfccfdb
+  hovercolor: 0xfccfdb,
 };
 
 //Sphere
@@ -122,13 +123,13 @@ window.addEventListener("click", () => {
         break;
 
       case horizontalLine:
-        console.log("click on cross");
+        // console.log("click on cross");
         const cross1Clicked = new Event("cross1Clicked");
         window.dispatchEvent(cross1Clicked);
         break;
 
       case verticalLine:
-        console.log("click on cross");
+        // console.log("click on cross");
         const cross2Clicked = new Event("cross2Clicked");
         window.dispatchEvent(cross2Clicked);
         break;
@@ -141,7 +142,7 @@ window.addEventListener("click", () => {
  */
 const sizes = {
   width: window.innerWidth / 5,
-  height: window.innerHeight,
+  height: window.innerHeight ,
 };
 
 window.addEventListener("resize", () => {
@@ -158,6 +159,11 @@ window.addEventListener("resize", () => {
   renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 });
 
+
+
+
+
+
 /**
  * Camera
  */
@@ -170,7 +176,7 @@ const camera = new THREE.PerspectiveCamera(
   10
 );
 
-camera.position.z = 3;
+camera.position.z = 2.5;
 
 scene.add(camera);
 
@@ -262,4 +268,6 @@ const tick = () => {
 
 tick();
 
-console.log(renderer.info);
+}
+
+export { initScene2 };

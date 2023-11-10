@@ -5,7 +5,8 @@ import * as CANNON from "cannon-es";
 import {RoundedBoxGeometry} from "three/examples/jsm/geometries/RoundedBoxGeometry.js";
 import Stats from "stats.js";
 
-/**
+const initScene1 = () => {
+  /**
  * Monitoring
  */
 
@@ -67,12 +68,12 @@ colorTexture.minFilter = THREE.NearestFilter;
 const cubeTextureLoader = new THREE.CubeTextureLoader();
 
 const environmentMap = cubeTextureLoader.load([
-  "/textures/environmentMaps/5/px.png",
-  "/textures/environmentMaps/5/nx.png",
-  "/textures/environmentMaps/5/py.png",
-  "/textures/environmentMaps/5/ny.png",
-  "/textures/environmentMaps/5/pz.png",
-  "/textures/environmentMaps/5/nz.png",
+  "/textures/environmentMaps/5/px.jpg",
+  "/textures/environmentMaps/5/nx.jpg",
+  "/textures/environmentMaps/5/py.jpg",
+  "/textures/environmentMaps/5/ny.jpg",
+  "/textures/environmentMaps/5/pz.jpg",
+  "/textures/environmentMaps/5/nz.jpg",
 ]);
 
 /**
@@ -138,16 +139,16 @@ scene.add(floor);
 const ambientLight = new THREE.AmbientLight(0xffffff, 0.7);
 scene.add(ambientLight);
 
-// const directionalLight = new THREE.DirectionalLight(0xffffff, 0.2);
-// directionalLight.castShadow = true;
-// directionalLight.shadow.mapSize.set(1024, 1024);
-// directionalLight.shadow.camera.far = 30;
-// directionalLight.shadow.camera.left = -14;
-// directionalLight.shadow.camera.top = 14;
-// directionalLight.shadow.camera.right = 14;
-// directionalLight.shadow.camera.bottom = -14;
-// directionalLight.position.set(5, 5, 5);
-// scene.add(directionalLight);
+const directionalLight = new THREE.DirectionalLight(0xffffff, 0.2);
+directionalLight.castShadow = true;
+directionalLight.shadow.mapSize.set(1024, 1024);
+directionalLight.shadow.camera.far = 30;
+directionalLight.shadow.camera.left = -14;
+directionalLight.shadow.camera.top = 14;
+directionalLight.shadow.camera.right = 14;
+directionalLight.shadow.camera.bottom = -14;
+directionalLight.position.set(5, 5, 5);
+scene.add(directionalLight);
 
 const hemiParams = {
   color: 0xff007b,
@@ -314,30 +315,22 @@ const createSphere = (radius, position) => {
 // Create Objects on Page Load
 
 // Delay for createSphere
-setTimeout(() => {
-  createSphere(Math.random() * 0.4, {
-    x: Math.random() * 3,
-    y: 10,
-    z: Math.random() * 3,
-  });
-}, 4000); // 1000 milliseconds (1 second) delay
+// setTimeout(() => {
+//   createSphere(0.3, {
+//     x: Math.random() * 3,
+//     y: 10,
+//     z: Math.random() * 3,
+//   });
+// }, 11000);
 
 // Delay for createBox
 setTimeout(() => {
-  createBox(Math.random() * 1.12, Math.random() * 1.12, Math.random() * 1.12, {
+  createBox(0.2, 1, 0.5, {
     x: Math.random() * 3,
     y: 10,
     z: Math.random() * 3,
   });
-}, 1000); // 2000 milliseconds (2 seconds) delayd
-
-setTimeout(() => {
-  createBox(Math.random() * 1.12, Math.random() * 1.12, Math.random() * 1.12, {
-    x: Math.random() * 3,
-    y: 10,
-    z: Math.random() * 3,
-  });
-}, 5000); // 2000 milliseconds (2 seconds) delayd
+}, 4500);
 
 // Create Buttons
 
@@ -347,6 +340,7 @@ window.addEventListener("createSphereClicked", () => {
     y: 10,
     z: Math.random() * 3,
   });
+  // updateIntersectedObjectsArray();
 });
 
 window.addEventListener("createBoxClicked", () => {
@@ -355,6 +349,7 @@ window.addEventListener("createBoxClicked", () => {
     y: 10,
     z: Math.random() * 3,
   });
+  // updateIntersectedObjectsArray();
 });
 
 const handleCrossClick = () => {
@@ -412,3 +407,7 @@ const tick = () => {
 };
 
 tick();
+
+}
+
+export { initScene1 };
