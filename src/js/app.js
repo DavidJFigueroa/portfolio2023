@@ -455,6 +455,7 @@ barba.init({
       },
       after() {
         body.classList.remove("overflow-hidden");
+        document.body.classList.add("overflow-x-hidden");
       },
       beforeLeave({ current }) {
         document.body.classList.add("overflow-hidden");
