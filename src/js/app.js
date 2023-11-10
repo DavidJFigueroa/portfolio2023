@@ -441,7 +441,7 @@ const loadingScreenTransition = () => {
         ease: "expoScale(0.5,7,none)",
 
         scale: 500,
-        duration: 2,
+        duration: window.innerWidth / 720,
       },
       "-=0.5",
     )
