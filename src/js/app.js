@@ -452,11 +452,13 @@ barba.init({
       beforeEnter() {
         initScene4();
         document.body.classList.remove("overflow-hidden");
-      },
-      after() {
-        body.classList.remove("overflow-hidden");
         document.body.classList.add("overflow-x-hidden");
+        document.body.classList.add("overflow-y-auto");
       },
+      // after() {
+      //   body.classList.remove("overflow-hidden");
+      //   document.body.classList.add("overflow-x-hidden");
+      // },
       beforeLeave({ current }) {
         document.body.classList.add("overflow-hidden");
       },
