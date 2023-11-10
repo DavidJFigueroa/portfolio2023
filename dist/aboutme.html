@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="en" class="scrollbar-hide overflow-hidden sm:scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me David J. Figueroa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Grenze:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Passion+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap"
+      rel="stylesheet"
+    />
+    
+    
+    <script type="module" crossorigin src="/portfolio/assets/app-3ff9f2ee.js"></script>
+    <link rel="stylesheet" href="/portfolio/assets/app-c4f35ade.css">
+  </head>
+  <body class="min-h-screen bg-bgcolor1 text-black" data-barba="wrapper">
+    <div class="overlay">
+      <div class="square-container"></div>
+    </div>
+    <div class="wrapper" data-barba="container" data-barba-namespace="aboutme">
+      <div
+        class="scrollbar-hide max-h-80 min-h-screen overflow-y-auto sm:overflow-x-hidden"
+      >
+        <canvas
+          class="webgl4 pointer-events-none fixed left-0 top-0 z-10 outline-none"
+        ></canvas>
+        <div class="z-50 flex min-h-screen flex-col overflow-y-auto">
+          <header>
+            <section
+              class="mx-auto flex h-20 max-w-7xl items-center justify-between p-6"
+            >
+              <div class="w-full">
+                <button
+                  id="hamburger-button"
+                  class="relative left-auto right-0 z-[100] h-8 w-8 cursor-pointer text-4xl md:hidden"
+                >
+                  <div
+                    class="absolute top-4 mt-0.5 h-1 w-8 bg-black transition-all duration-500 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:bg-black before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:bg-black after:transition-all after:duration-500 after:content-['']"
+                  ></div>
+                </button>
+                <nav
+                  id="navbar"
+                  class="hidden space-x-8 text-sm font-bold md:block"
+                  aria-label="main"
+                >
+                  <a href="index.html" class="navelement hover:text-textcolor2"
+                    ><span class="font-grenze font-extrabold">(.01)</span>
+                    HOME</a
+                  >
+                  <a href="skills.html" class="navelement hover:text-textcolor2"
+                    ><span class="font-grenze font-extrabold">(.02)</span>
+                    SKILLS</a
+                  >
+                  <a
+                    href="projects.html"
+                    class="navelement hover:text-textcolor2"
+                    ><span class="font-grenze font-extrabold">(.03)</span>
+                    PROJECTS</a
+                  >
+                  <a
+                    href="contact.html"
+                    class="navelement hover:text-textcolor2"
+                    ><span class="font-grenze font-extrabold">(.04)</span>
+                    CONTACT</a
+                  >
+                </nav>
+              </div>
+            </section>
+            <section
+              id="mobile-menu"
+              class="justify-content-center fixed top-0 z-50 hidden min-h-screen w-full origin-top animate-open-menu flex-col items-center bg-texture6 text-3xl font-bold text-black"
+            >
+              <nav
+                class="my-auto flex flex-col items-center py-8 pt-20"
+                aria-label="mobile"
+              >
+                <div class="-mt-8">_________</div>
+                <a
+                  href="index.html"
+                  class="w-full py-6 text-center hover:opacity-90"
+                  ><span class="font-grenze font-extrabold">(.01)</span> HOME</a
+                >
+                <a
+                  href="aboutme.html"
+                  class="w-full py-6 text-center hover:opacity-90"
+                  ><span class="font-grenze font-extrabold">(.02)</span> ABOUT
+                  ME</a
+                >
+                <a
+                  href="skills.html"
+                  class="w-full py-6 text-center hover:opacity-90"
+                >
+                  <span class="font-grenze font-extrabold">(.03)</span>
+                  SKILLS</a
+                >
+                <a
+                  href="projects.html"
+                  class="w-full py-6 text-center hover:opacity-90"
+                  ><span class="font-grenze font-extrabold">(.04)</span>
+                  PROJECTS</a
+                >
+                <a
+                  href="contact.html"
+                  class="w-full py-6 text-center hover:opacity-90"
+                  ><span class="font-grenze font-extrabold">(.05)</span>
+                  CONTACT</a
+                >
+                <div class="-mt-8">_________</div>
+                <div id="socials" class="flex flex-row items-center gap-2 py-4">
+                  <a href="" class="mx-5"
+                    ><svg
+                      class="hover:fill-texttext-textcolor2 fill-black"
+                      xmlns="http://www.w3.org/2000/svg"
+                      x="0px"
+                      y="0px"
+                      width="36"
+                      height="36"
+                      viewBox="0 0 50 50"
+                    >
+                      <path
+                        d="M 11 4 C 7.134 4 4 7.134 4 11 L 4 39 C 4 42.866 7.134 46 11 46 L 39 46 C 42.866 46 46 42.866 46 39 L 46 11 C 46 7.134 42.866 4 39 4 L 11 4 z M 13.085938 13 L 21.023438 13 L 26.660156 21.009766 L 33.5 13 L 36 13 L 27.789062 22.613281 L 37.914062 37 L 29.978516 37 L 23.4375 27.707031 L 15.5 37 L 13 37 L 22.308594 26.103516 L 13.085938 13 z M 16.914062 15 L 31.021484 35 L 34.085938 35 L 19.978516 15 L 16.914062 15 z"
+                      ></path></svg
+                  ></a>
+                  <a href=""
+                    ><svg
+                      class="hover:fill-texttext-textcolor2 fill-black"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="30"
+                      height="30"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                      /></svg
+                  ></a>
+                  <a href="" class="mx-5"
+                    ><svg
+                      class="hover:fill-texttext-textcolor2 fill-black"
+                      xmlns="http://www.w3.org/2000/svg"
+                      x="0px"
+                      y="0px"
+                      width="36"
+                      height="36"
+                      viewBox="0 0 50 50"
+                    >
+                      <path
+                        d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"
+                      ></path></svg
+                  ></a>
+                </div>
+              </nav>
+            </section>
+          </header>
+          <main class="flex-1">
+            <!-- About me-->
+            <div class="mb-10 w-screen">
+              <div class="mx-auto flex max-w-7xl">
+                <div
+                  class="octopus w-1/2 bg-texture13 bg-cover md:bg-contain md:bg-right md:bg-no-repeat"
+                >
+                  <!-- <div class="container1 z-0 h-full w-full"></div> -->
+                </div>
+                <div class="w-1/2">
+                  <h1
+                    class="outline-title-yellow z-10 p-4 font-grenze text-7xl leading-none md:text-9xl lg:text-[16rem]"
+                  >
+                    About<br />
+                    Me
+                  </h1>
+                </div>
+              </div>
+            </div>
+            <div class="mx-auto max-w-7xl">
+              <p
+                class="relative z-40 px-6 text-justify text-2xl font-extrabold text-white mix-blend-difference md:text-3xl lg:px-0 lg:text-5xl"
+              >
+                HI! I'M DAVID J. FIGUEROA, A CREATIVE FULL-STACK WEB DEVELOPER
+                WITH A DIVERSE BACKGROUND (I HAD MY TENTACLES IN A LOT OF
+                DIFFERENT THINGS). I SPECIALIZE IN CREATING
+                <svg
+                  width="72px"
+                  height="72px"
+                  viewBox="0 0 20 24"
+                  fill="white"
+                  xmlns="http://www.w3.org/2000/svg"
+                  transform="rotate(0)matrix(-1, 0, 0, 1, 0, 0)"
+                  class="line inline-block"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M14.7245 11.2754L16 12.4999L10.0129 17.8218C8.05054 19.5661 5.60528 20.6743 3 20.9999L3.79443 19.5435C4.6198 18.0303 5.03249 17.2737 5.50651 16.5582C5.92771 15.9224 6.38492 15.3113 6.87592 14.7278C7.42848 14.071 8.0378 13.4615 9.25644 12.2426L12 9.49822M11.5 8.99787L17.4497 3.04989C18.0698 2.42996 19.0281 2.3017 19.7894 2.73674C20.9027 3.37291 21.1064 4.89355 20.1997 5.80024L19.8415 6.15847C19.6228 6.3771 19.3263 6.49992 19.0171 6.49992H18L16 8.49992V8.67444C16 9.16362 16 9.40821 15.9447 9.63839C15.8957 9.84246 15.8149 10.0375 15.7053 10.2165C15.5816 10.4183 15.4086 10.5913 15.0627 10.9372L14.2501 11.7498L11.5 8.99787Z"
+                      stroke="#000000"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </g></svg
+                >EDGE SOLUTIONS, WITH A STRONG EMPHASIS ON DESIGN, ANIMATIONS,
+                AND DELIVERING
+                <span
+                  class="bg-gradient-to-r from-sky-400 to-textcolor10 bg-clip-text text-transparent"
+                  >CAPTIVATING</span
+                >
+                <!-- <span
+              class="bg-gradient-to-r from-white to-textcolor10 bg-clip-text text-transparent"
+              >CAPTIVATING</span
+            > -->
+                USER EXPERIENCES THROUGH INNOVATIVE TECHNOLOGIES LIKE THREE.JS
+                AND GSAP. MY GOAL IS TO MAKE AN IMPACT IN INDUSTRIES I'M
+                PASSIONATE ABOUT LIKE MUSIC, ART, DESIGN, FITNESS, GASTRONOMY,
+                AND SUSTAINABILITY. IF YOU'RE LOOKING FO<span
+                  class="flip text-3xl md:text-4xl lg:text-6xl"
+                >
+                  R</span
+                >
+                A DEVELOPER WITH A
+                <span
+                  class="bg-gradient-to-r from-textcolor4 to-textcolor6 bg-clip-text text-transparent mix-blend-normal"
+                  >CREATIVE EDGE</span
+                >
+                AND A STRONG WORK ETHIC <span>...</span>
+                <br class="hidden lg:block" />
+                <svg
+                  width="64px"
+                  height="64px"
+                  viewBox="0 0 400 400"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="inline-block"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M67 156.22C96.7674 155.065 113.399 153.68 116.895 152.064C120.392 150.448 120.392 179.495 116.895 239.206C90.6391 244.758 74.0072 247.533 67 247.533"
+                      stroke="#ffffff"
+                      stroke-opacity="0.9"
+                      stroke-width="16"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      d="M119.518 164.932H145.896C159.889 159.709 173.96 157.847 188.108 159.347C209.329 161.597 211.918 182.059 218.848 183.212C225.777 184.364 258.4 188.59 258.4 199.455C258.4 210.321 221.42 210.321 195.256 210.321"
+                      stroke="#ffffff"
+                      stroke-opacity="0.9"
+                      stroke-width="16"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      d="M236.727 184.364C229.764 181.286 226.416 179.718 226.683 179.659C264.782 171.238 291.587 171.238 294.551 181.484C295.997 186.481 283.946 189.739 258.399 191.257C298.601 186.541 319.363 185.782 320.683 188.98C322.663 193.776 292.27 204.584 279.734 205.454C267.199 206.325 330.337 194.566 333.703 206.923C337.07 219.28 274.076 232.095 239.329 234.337C204.582 236.579 154.705 223.963 126.801 226.082"
+                      stroke="#ffffff"
+                      stroke-opacity="0.9"
+                      stroke-width="16"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </g>
+                </svg>
+                LET'S CONNECT!
+              </p>
+              <canvas
+                class="webgl4 pointer-events-none fixed left-0 top-0 z-n1 outline-none"
+              ></canvas>
+            </div>
+
+            <!-- Past Jobs -->
+            <div class="my-10 w-screen">
+              <div class="mx-auto flex max-w-7xl">
+                <div class="w-1/2 text-right">
+                  <h1
+                    class="outline-title-yellow z-10 p-4 font-grenze text-7xl leading-none md:text-9xl lg:text-[16rem]"
+                  >
+                    Past<br />
+                    Jobs
+                  </h1>
+                </div>
+                <div
+                  class="w-1/2 bg-texture7 bg-cover md:bg-contain md:bg-no-repeat"
+                >
+                  <!-- <div class="container2 z-0 h-full w-full"></div> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="relative mx-auto max-w-7xl">
+              <p
+                class="relative z-40 px-6 text-justify text-2xl font-extrabold text-white mix-blend-difference md:text-3xl lg:px-0 lg:text-5xl"
+              >
+                MY JOURNEY STARTED AT THE
+                <span
+                  class="bg-gradient-to-r from-textcolor3 to-textcolor6 bg-clip-text text-transparent"
+                  >ART ACADEMY</span
+                >
+                IN MÜNSTER, WHERE I STUDIED PAINTING UNDER MICHAEL VAN OFEN. BUT
+                AT THE SAME TIME MY MUSIC CAREER STARTED TAKING OFF AND I
+                DECIDED TO FOCUS ON THIS NEW PROFESSION, WHICH HAS ALLOWED ME TO
+                TRAVEL TO 3 CONTINENTS AND PLAY COUNTLESS GIGS IN OVER 10
+                COUNTRIES. OVER THE SPAN OF MY TIME AS A
+                <span
+                  class="bg-gradient-to-r from-violet-800 to-textcolor12 bg-clip-text text-transparent"
+                  >MUSIC PRODUCER</span
+                >
+                I WAS ABLE TO RELEASE 7 VINYL RECORDINGS AND GAIN OVER A MILLION
+                LISTENERS. MY JOURNEY TOOK AN INTERESTING TURN AS I SHIFTED FROM
+                THE DYNAMIC WORLD OF MUSIC PRODUCTION TO THE ROLE OF A
+                <span
+                  class="bg-gradient-to-r from-textcolor9 to-textcolor4 bg-clip-text text-transparent"
+                  >BAR MANAGER</span
+                >
+                IN A MICHELIN-STAR RESTAURANT, WHERE I'VE HONED MY TALENTS IN
+                MANAGEMENT, TEAM LEADERSHIP, AND THRIVING UNDER INTENSE
+                PRESSURE, ALL WHILE DELIVERING TOP-NOTCH CUSTOMER SERVICE. MY
+                PASSION FOR TECHNOLOGY LED ME TO WEB DEVELOPMENT. IT'S SOMETHING
+                I'VE ALWAYS WANTED TO LEARN AND EXPLORE. FOR ME, IT'S A WAY TO
+                BE A PART OF TECH'S ONGOING EXCITING INNOVATIONS.
+              </p>
+              <!-- <canvas
+            class="webgl4 pointer-events-none fixed left-0 top-0 z-n1 outline-none"
+          ></canvas> -->
+            </div>
+
+            <!-- Hobbies -->
+            <div class="my-10 w-screen">
+              <div class="mx-auto flex max-w-7xl">
+                <div
+                  class="w-1/2 bg-texture8 bg-cover md:bg-contain md:bg-right md:bg-no-repeat"
+                >
+                  <!-- <div class="container3 z-0 h-full w-full"></div> -->
+                </div>
+                <div class="w-1/2">
+                  <h1
+                    class="outline-title-yellow z-10 p-4 font-grenze text-7xl leading-none md:text-9xl lg:text-[16rem]"
+                  >
+                    Hobb <br />
+                    ies
+                  </h1>
+                </div>
+              </div>
+            </div>
+            <div class="mx-auto max-w-7xl">
+              <p
+                class="relative z-40 px-6 text-justify text-2xl font-extrabold text-white mix-blend-difference md:text-3xl lg:px-0 lg:text-5xl"
+              >
+                IN THE MIDST OF LIFE'S BUSYNESS, I FIND SOLACE IN MY HOBBIES.
+                THEY'RE MY GO-TO FOR UNWINDING, EXPLORING, AND PERSONAL GROWTH.
+                PLUS, MY CANINE SIDEKICK,
+                <span
+                  class="bg-gradient-to-r from-green-900 to-textcolor4 bg-clip-text text-transparent"
+                  >NOSH</span
+                >, IS ALWAYS THERE, ADDING HEAPS OF LOVE AND JOY TO MY FREE
+                TIME. MY HOBBIES INCLUDE
+                <span class="font-grenze text-4xl lg:text-6xl"> Hiking, </span>
+                <span class="font-yanone text-3xl lg:text-5xl">FITNESS, </span>
+                <span class="font-passion text-3xl lg:text-5xl"
+                  >MARTIAL ARTS,
+                </span>
+                <span class="font-gara text-3xl lg:text-5xl">CHESS, </span>
+                <span class="font-right text-3xl lg:text-5xl"> AI ART, </span>
+                <span class="font-shadow text-3xl lg:text-5xl">
+                  ART EXHIBITIONS,
+                </span>
+                <span class="font-monserat text-3xl lg:text-5xl">THEATRE </span>
+                AND MANY MORE...
+              </p>
+            </div>
+            <!-- <canvas
+          class="webgl4 pointer-events-none fixed left-0 top-0 z-n1 outline-none"
+        ></canvas> -->
+          </main>
+
+          <footer id="footer" class="w-full">
+            <section
+              class="mx-auto flex max-w-7xl justify-center p-6 sm:justify-end"
+            >
+              <div id="socials" class="flex flex-row gap-2">
+                <a href="" class="mx-5"
+                  ><svg
+                    class="hover:fill-textcolor2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0px"
+                    y="0px"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 50 50"
+                  >
+                    <path
+                      d="M 11 4 C 7.134 4 4 7.134 4 11 L 4 39 C 4 42.866 7.134 46 11 46 L 39 46 C 42.866 46 46 42.866 46 39 L 46 11 C 46 7.134 42.866 4 39 4 L 11 4 z M 13.085938 13 L 21.023438 13 L 26.660156 21.009766 L 33.5 13 L 36 13 L 27.789062 22.613281 L 37.914062 37 L 29.978516 37 L 23.4375 27.707031 L 15.5 37 L 13 37 L 22.308594 26.103516 L 13.085938 13 z M 16.914062 15 L 31.021484 35 L 34.085938 35 L 19.978516 15 L 16.914062 15 z"
+                    ></path></svg
+                ></a>
+                <a href=""
+                  ><svg
+                    class="hover:fill-textcolor2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                    /></svg
+                ></a>
+                <a href="" class="mx-5"
+                  ><svg
+                    class="hover:fill-textcolor2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0px"
+                    y="0px"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 50 50"
+                  >
+                    <path
+                      d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"
+                    ></path></svg
+                ></a>
+              </div>
+            </section>
+          </footer>
+        </div>
+      </div>
+
+      
+      
+    </div>
+  </body>
+</html>
