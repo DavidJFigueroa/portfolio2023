@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="scrollbar-hide sm:scroll-smooth ">
+<html lang="en" class="scrollbar-hide sm:scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -42,9 +42,11 @@
     />
     <link rel="stylesheet" href="css/output.css" />
     <link rel="stylesheet" href="css/index.css" />
-
   </head>
-  <body class="min-h-screen  bg-bgcolor1 text-black overflow-hidden  scrollbar-hide" data-barba="wrapper">
+  <body
+    class="scrollbar-hide min-h-screen overflow-hidden bg-bgcolor1 text-black"
+    data-barba="wrapper"
+  >
     <div class="overlay">
       <div class="square-container"></div>
     </div>
@@ -58,9 +60,11 @@
         class="absolute z-40 h-screen w-full bg-black text-right"
       >
         <h2 class="mr-8 mt-[200px] sm:mr-32">
-          <span id="counter"
-            class=" font-grenze text-[200px] text-textcolor2 lg:text-[280px]"
-          >0</span>
+          <span
+            id="counter"
+            class="font-grenze text-[200px] text-textcolor2 lg:text-[280px]"
+            >0</span
+          >
           <span class="font-grenze text-[50px] text-textcolor2 lg:text-[120px]"
             >%</span
           >
@@ -77,10 +81,10 @@
         </div>
 
         <div
-          class="absolute h-screen w-3/12  md:left-3 md:w-2/12 lg:left-20 lg:w-1/12 2xl:left-28"
+          class="absolute h-screen w-3/12 md:left-3 md:w-2/12 lg:left-20 lg:w-1/12 2xl:left-28"
         ></div>
 
-        <header class="sticky top-0 z-20 ">
+        <header class="sticky top-0 z-20">
           <section
             class="mx-auto flex h-20 max-w-7xl flex-row-reverse items-center justify-end p-6 sm:flex-row"
           >
@@ -95,7 +99,7 @@
               </button>
               <button
                 id="questionMarksmall"
-                class="questionmark ml-2 text-5xl font-extrabold hover:text-black text-textcolor2 sm:hidden"
+                class="questionmark ml-2 text-5xl font-extrabold text-textcolor2 hover:text-black sm:hidden"
                 data-modal-target="defaultModal"
                 data-modal-toggle="defaultModal"
               >
@@ -107,18 +111,26 @@
                 class="hidden items-center justify-center space-x-8 text-sm font-bold md:flex"
                 aria-label="main"
               >
-                <a href="aboutme.html" class="navelement hover:text-textcolor2"
-                  > <span class=" font-grenze font-extrabold">(.01)</span> ABOUT ME</a
+                <a href="aboutme.html" class="navelement hover:text-textcolor2">
+                  <span class="font-grenze font-extrabold">(.01)</span> ABOUT
+                  ME</a
                 >
-                <a href="skills.html" class="navelement hover:text-textcolor2"><span class="font-grenze font-extrabold">(.02)</span> SKILLS</a>
+                <a href="skills.html" class="navelement hover:text-textcolor2"
+                  ><span class="font-grenze font-extrabold">(.02)</span>
+                  SKILLS</a
+                >
                 <a href="projects.html" class="navelement hover:text-textcolor2"
-                  ><span class="font-grenze font-extrabold">(.03)</span> PROJECTS</a
+                  ><span class="font-grenze font-extrabold">(.03)</span>
+                  PROJECTS</a
                 >
-                <a href="contact.html" class="navelement hover:text-textcolor2"><span class="font-grenze font-extrabold">(.04)</span> CONTACT</a>
+                <a href="contact.html" class="navelement hover:text-textcolor2"
+                  ><span class="font-grenze font-extrabold">(.04)</span>
+                  CONTACT</a
+                >
 
                 <button
                   id="questionMark"
-                  class="navelement questionmark hover:text-black text-textcolor2 text-2xl"
+                  class="navelement questionmark text-2xl text-textcolor2 hover:text-black"
                   data-modal-target="defaultModal"
                   data-modal-toggle="defaultModal"
                 >
@@ -129,37 +141,41 @@
           </section>
           <section
             id="mobile-menu"
-            class="justify-content-center items-center fixed top-0 z-40 hidden h-screen w-full origin-top animate-open-menu flex-col bg-texture6 text-3xl font-bold text-black"
+            class="justify-content-center fixed top-0 z-40 hidden h-screen w-full origin-top animate-open-menu flex-col items-center bg-texture6 text-3xl font-bold text-black"
           >
             <nav
-              class="flex  flex-col items-center py-8 my-auto"
+              class="my-auto flex flex-col items-center py-8"
               aria-label="mobile"
-            > 
-            <div class="-mt-8">_________</div>
+            >
+              <div class="-mt-8">_________</div>
               <a
                 href="index.html"
                 class="w-full py-6 text-center hover:opacity-90"
-                ><span class="font-grenze font-extrabold">(.01)</span>  HOME</a
+                ><span class="font-grenze font-extrabold">(.01)</span> HOME</a
               >
               <a
                 href="aboutme.html"
                 class="w-full py-6 text-center hover:opacity-90"
-                ><span class="font-grenze font-extrabold">(.02)</span>  ABOUT ME</a
+                ><span class="font-grenze font-extrabold">(.02)</span> ABOUT
+                ME</a
               >
               <a
                 href="skills.html"
                 class="w-full py-6 text-center hover:opacity-90"
-                > <span class="font-grenze font-extrabold">(.03)</span> SKILLS</a
+              >
+                <span class="font-grenze font-extrabold">(.03)</span> SKILLS</a
               >
               <a
                 href="projects.html"
                 class="w-full py-6 text-center hover:opacity-90"
-                ><span class="font-grenze font-extrabold">(.04)</span>  PROJECTS</a
+                ><span class="font-grenze font-extrabold">(.04)</span>
+                PROJECTS</a
               >
               <a
                 href="contact.html"
                 class="w-full py-6 text-center hover:opacity-90"
-                ><span class="font-grenze font-extrabold">(.05)</span>  CONTACT</a
+                ><span class="font-grenze font-extrabold">(.05)</span>
+                CONTACT</a
               >
               <div class="-mt-8">_________</div>
               <div id="socials" class="flex flex-row items-center gap-2 py-4">
@@ -223,10 +239,10 @@
             id="defaultModal"
             tabindex="-1"
             aria-hidden="true"
-            class=" fixed left-0 right-0 top-0 z-50 hidden h-[calc(100%-1rem)] max-h-full w-full overflow-y-auto overflow-x-hidden p-4 md:inset-0"
+            class="fixed left-0 right-0 top-0 z-50 hidden h-[calc(100%-1rem)] max-h-full w-full overflow-y-auto overflow-x-hidden p-4 md:inset-0"
           >
             <div
-              class="bg-bgcolor1 relative max-h-full w-full max-w-2xl bg-texture14 bg-cover"
+              class="bg-texture14 relative max-h-full w-full max-w-2xl bg-bgcolor1 bg-cover"
             >
               <!-- Modal content -->
               <div class="relative z-50 shadow">
@@ -258,7 +274,7 @@
                 <!-- Modal body -->
                 <div class="p-6 text-right text-black">
                   <p
-                    class="text-justify text-2xl font-bold leading-relaxed text-black sm:text-2xl"
+                    class="text-justify text-base font-bold leading-relaxed text-black sm:text-2xl"
                   >
                     CLICK ON ONE OF THE BUTTONS (CUBE OR SPHERE) ON THE LEFT TO
                     CREATE GEOMETRIES. PRESS THE
@@ -272,15 +288,15 @@
           </div>
           <!-- Marquee Container -->
           <div
-            class="marquee-container fixed bottom-0 flex w-full flex-row justify-center  pb-4"
+            class="marquee-container fixed bottom-0 flex w-full flex-row justify-center pb-4"
           >
             <div
               id="marquee"
-              class="marquee flex h-28 gap-4 sm:gap-6 lg:gap-8 overflow-hidden md:h-36 lg:h-40"
+              class="marquee flex h-28 gap-4 overflow-hidden sm:gap-6 md:h-36 lg:h-40 lg:gap-8"
             >
               <div
                 id="marquee_group"
-                class="marquee_group flex min-w-full shrink-0 items-center justify-between gap-4 sm:gap-6 lg:gap-8 pb-4"
+                class="marquee_group flex min-w-full shrink-0 items-center justify-between gap-4 pb-4 sm:gap-6 lg:gap-8"
               >
                 <span
                   class="whitespace-nowrap text-7xl font-extrabold md:text-8xl lg:text-9xl"
@@ -319,7 +335,7 @@
 
               <div
                 id="marquee_group2"
-                class="marquee_group flex min-w-full shrink-0 items-center justify-between gap-4 sm:gap-6 lg:gap-8 pb-4"
+                class="marquee_group flex min-w-full shrink-0 items-center justify-between gap-4 pb-4 sm:gap-6 lg:gap-8"
                 aria-hidden="true"
               >
                 <span
