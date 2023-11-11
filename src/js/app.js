@@ -54,14 +54,59 @@ barba.hooks.after(() => {
   mobileMenu.addEventListener("click", toggleMenu);
 });
 
+function isMobile() {
+  return /Mobi|Android/i.test(navigator.userAgent);
+}
+
 const squareContainer = document.querySelector(".square-container");
+
+// function fillSquares() {
+//   const desiredSquareSize = 80; // Adjust as needed
+
+//   const screenWidth = window.innerWidth;
+//   const numCols = Math.floor(screenWidth / desiredSquareSize);
+//   const numRows = Math.ceil(screenWidth / desiredSquareSize);
+
+//   squareContainer.style.gridTemplateColumns = `repeat(${numCols}, 1fr)`;
+//   squareContainer.style.gridTemplateRows = `repeat(${numRows}, 1fr)`;
+
+//   const totalSquares = numCols * numRows;
+
+//   for (let i = 0; i < totalSquares; i++) {
+//     const square = document.createElement("div");
+//     square.classList.add("square");
+//     squareContainer.appendChild(square);
+//   }
+
+//   const squares = Array.from(document.querySelectorAll(".square"));
+//   const randomSquares = gsap.utils.shuffle(squares);
+
+//   const timeline = gsap.timeline({
+//     defaults: { duration: 0.0005, ease: "expo.out" },
+//   });
+//   randomSquares.forEach((square, index) => {
+//     timeline.to(square, { opacity: 1 }, index * 0.001);
+//   });
+
+//   return timeline;
+// }
 
 function fillSquares() {
   const desiredSquareSize = 80; // Adjust as needed
+  const durationMobile = 0.01;
+  const durationDesktop = 0.001;
 
-  const screenWidth = window.innerWidth;
+  const screenWidth =
+    window.innerWidth ||
+    document.documentElement.clientWidth ||
+    document.body.clientWidth;
+  const screenHeight =
+    window.innerHeight ||
+    document.documentElement.clientHeight ||
+    document.body.clientHeight;
+
   const numCols = Math.floor(screenWidth / desiredSquareSize);
-  const numRows = Math.ceil(screenWidth / desiredSquareSize);
+  const numRows = Math.ceil(screenHeight / desiredSquareSize);
 
   squareContainer.style.gridTemplateColumns = `repeat(${numCols}, 1fr)`;
   squareContainer.style.gridTemplateRows = `repeat(${numRows}, 1fr)`;
@@ -81,20 +126,25 @@ function fillSquares() {
     defaults: { duration: 0.0005, ease: "expo.out" },
   });
   randomSquares.forEach((square, index) => {
-    timeline.to(square, { opacity: 1 }, index * 0.001);
+    const currentDuration = isMobile() ? durationMobile : durationDesktop;
+    timeline.to(square, { opacity: 1 }, index * currentDuration);
   });
 
   return timeline;
 }
 
 function clearSquares() {
+  const durationMobile = 0.03;
+  const durationDesktop = 0.003;
+
   const squares = document.querySelectorAll(".square");
   const randomSquares = gsap.utils.shuffle(Array.from(squares));
 
   const timeline = gsap.timeline({ defaults: { duration: 0.005 } });
 
   randomSquares.forEach((square, index) => {
-    timeline.to(square, { opacity: 0 }, index * 0.003);
+    const currentDuration = isMobile() ? durationMobile : durationDesktop;
+    timeline.to(square, { opacity: 0 }, index * currentDuration);
   });
 
   timeline.eventCallback("onComplete", () => {
