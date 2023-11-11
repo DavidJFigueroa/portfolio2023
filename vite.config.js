@@ -22,6 +22,7 @@ export default defineConfig({
         aboutme: resolve(root, "/aboutme.html"),
         projects: resolve(root, "/projects.html"),
         contacts: resolve(root, "/contact.html"),
+        classicflixreact: resolve(root, "/classicflixreact.html"),
       },
     },
     outDir: "../dist",

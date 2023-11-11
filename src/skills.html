@@ -18,7 +18,10 @@
     <link rel="stylesheet" href="css/index.css" />
   </head>
 
-  <body class="overflow-hidden bg-bgcolor1 text-black" data-barba="wrapper">
+  <body
+    class="h-screen overflow-hidden bg-bgcolor1 text-black"
+    data-barba="wrapper"
+  >
     <div class="overlay">
       <div class="square-container"></div>
     </div>
@@ -28,11 +31,7 @@
       data-barba-namespace="skills"
     >
       <canvas class="webgl3 fixed left-0 top-0 z-20 outline-none"></canvas>
-      <div class="fixed bottom-0 left-0 right-0 top-20 z-n1 md:top-10">
-        <div class="flex min-h-screen items-center justify-center pb-20">
-       
-        </div>
-      </div>
+
       <header class="sticky top-0 z-50">
         <section
           class="mx-auto flex h-20 max-w-7xl flex-row-reverse items-center justify-between p-6 sm:flex-row"
@@ -73,10 +72,10 @@
         </section>
         <section
           id="mobile-menu"
-          class="justify-content-center fixed top-0 z-40 hidden min-h-screen w-full origin-top animate-open-menu flex-col items-center bg-texture6 text-3xl font-bold text-black"
+          class="justify-content-center fixed top-0 z-40 hidden h-screen w-full origin-top animate-open-menu flex-col items-center bg-texture6 text-3xl font-bold text-black"
         >
           <nav
-            class="my-auto flex flex-col items-center py-8 pt-20"
+            class="my-auto flex flex-col items-center py-8"
             aria-label="mobile"
           >
             <div class="-mt-8">_________</div>
@@ -157,151 +156,99 @@
         <div class="mx-auto flex h-full max-w-7xl flex-col px-5 md:p-5">
           <div class="frontend flex-1 text-right">
             <h1 class="front text-3xl font-extrabold md:text-8xl">FRONTEND</h1>
-            <p class="text-xs font-extrabold pfront">
+            <p class="pfront text-xs font-extrabold">
               (HTML, CSS, JAVASCRIPT, TYPESCRIPT, REACT, REACT NATIVE, REDUX,
               ANGULAR, <br class="hidden md:block" />THREEJS, GSAP, BARBAJS,
               JQUERY,TAILWIND, BOOTSTRAP, JSDOC,<br class="hidden md:block" />
               EXPO, ANDROID STUDIO, POSTMAN, JEST, CUCUMBER)
             </p>
-            <p class="font-sofia text-[0.5rem] font-extrabold sm:text-sm pfront">
+            <p
+              class="pfront font-sofia text-[0.5rem] font-extrabold sm:text-sm"
+            >
               Progressive Web Applications, Animations, 3D Objects, UX/UI
               Design,
-              <br class="hidden md:block" />
+              <br class="" />
               Mobile Apps, Accessible Websites, Test +
               Behavior-Driven-Development, <br />Web Components, Responsive
               Design
             </p>
           </div>
           <div
-          class="marquee-container -ml-20 flex w-[150%] rotate-[15deg] flex-col justify-center bg-texture4 pb-5"
-        >
-          <div
-            id="marquee"
-            class="marquee h-28 md:pt-none flex gap-8 overflow-hidden py-8 text-textcolor3 md:h-40"
+            class="marquee-container -ml-40 flex w-[150%] rotate-[15deg] flex-col justify-center bg-texture4 pb-5 sm:pb-0"
           >
             <div
-              id="marquee_group"
-              class="marquee_group flex min-w-full shrink-0 animate-[marquee_40s_linear_infinite] items-center justify-between gap-8"
+              id="marquee"
+              class="marquee md:pt-none flex h-28 gap-8 overflow-hidden py-8 text-textcolor3 md:h-40"
             >
-              <span
-                class="whitespace-nowrap text-6xl font-extrabold md:text-9xl"
-                >HTML <span class="text-5xl md:text-8xl">*</span>
+              <div
+                id="marquee_group"
+                class="marquee_group flex min-w-full shrink-0 animate-[marquee_40s_linear_infinite] items-center justify-between gap-8"
+              >
+                <span
+                  class="whitespace-nowrap text-6xl font-extrabold md:text-9xl"
+                  >HTML <span class="text-5xl md:text-8xl">*</span>
 
-                CSS <span class="text-5xl md:text-8xl">*</span>
-              </span>
-              <span
-                class="whitespace-nowrap text-6xl font-extrabold md:text-9xl"
-                >JAVASCRIPT <span class="text-5xl md:text-8xl">*</span>
+                  CSS <span class="text-5xl md:text-8xl">*</span>
+                </span>
+                <span
+                  class="whitespace-nowrap text-6xl font-extrabold md:text-9xl"
+                  >JAVASCRIPT <span class="text-5xl md:text-8xl">*</span>
 
-                REACT <span class="text-5xl md:text-8xl">*</span>
-              </span>
-              <span
-                class="whitespace-nowrap text-6xl font-extrabold md:text-9xl"
-                >SQL <span class="text-5xl md:text-8xl">*</span>
+                  REACT <span class="text-5xl md:text-8xl">*</span>
+                </span>
+                <span
+                  class="whitespace-nowrap text-6xl font-extrabold md:text-9xl"
+                  >SQL <span class="text-5xl md:text-8xl">*</span>
 
-                TYPESCRIPT <span class="text-5xl md:text-8xl">*</span>
-              </span>
-              <span
-                class="whitespace-nowrap text-6xl font-extrabold md:text-9xl"
-                >ANGULAR <span class="text-6xl md:text-8xl">*</span>
+                  TYPESCRIPT <span class="text-5xl md:text-8xl">*</span>
+                </span>
+                <span
+                  class="whitespace-nowrap text-6xl font-extrabold md:text-9xl"
+                  >ANGULAR <span class="text-6xl md:text-8xl">*</span>
 
-                EXPRESS <span class="text-5xl md:text-8xl">*</span>
-              </span>
+                  EXPRESS <span class="text-5xl md:text-8xl">*</span>
+                </span>
+              </div>
+
+              <div
+                id="marquee_group2"
+                class="marquee_group flex min-w-full shrink-0 animate-[marquee_40s_linear_infinite] items-center justify-between gap-8"
+                aria-hidden="true"
+              >
+                <span
+                  class="whitespace-nowrap text-6xl font-extrabold md:text-9xl"
+                  >HTML <span class="text-5xl md:text-8xl">*</span>
+
+                  CSS <span class="text-5xl md:text-8xl">*</span>
+                </span>
+                <span
+                  class="whitespace-nowrap text-6xl font-extrabold md:text-9xl"
+                  >JAVASCRIPT <span class="text-5xl md:text-8xl">*</span>
+
+                  REACT <span class="text-5xl md:text-8xl">*</span>
+                </span>
+                <span
+                  class="whitespace-nowrap text-6xl font-extrabold md:text-9xl"
+                  >SQL <span class="text-5xl md:text-8xl">*</span>
+
+                  TYPESCRIPT <span class="text-5xl md:text-8xl">*</span>
+                </span>
+                <span
+                  class="whitespace-nowrap text-6xl font-extrabold md:text-9xl"
+                  >ANGULAR <span class="text-6xl md:text-8xl">*</span>
+
+                  EXPRESS <span class="text-5xl md:text-8xl">*</span>
+                </span>
+              </div>
             </div>
-
             <div
-              id="marquee_group2"
-              class="marquee_group flex min-w-full shrink-0 animate-[marquee_40s_linear_infinite] items-center justify-between gap-8"
-              aria-hidden="true"
+              id="marquee2"
+              class="marquee flex h-[30px] gap-2 overflow-hidden text-textcolor3"
             >
-              <span
-                class="whitespace-nowrap text-6xl font-extrabold md:text-9xl"
-                >HTML <span class="text-5xl md:text-8xl">*</span>
-
-                CSS <span class="text-5xl md:text-8xl">*</span>
-              </span>
-              <span
-                class="whitespace-nowrap text-6xl font-extrabold md:text-9xl"
-                >JAVASCRIPT <span class="text-5xl md:text-8xl">*</span>
-
-                REACT <span class="text-5xl md:text-8xl">*</span>
-              </span>
-              <span
-                class="whitespace-nowrap text-6xl font-extrabold md:text-9xl"
-                >SQL <span class="text-5xl md:text-8xl">*</span>
-
-                TYPESCRIPT <span class="text-5xl md:text-8xl">*</span>
-              </span>
-              <span
-                class="whitespace-nowrap text-6xl font-extrabold md:text-9xl"
-                >ANGULAR <span class="text-6xl md:text-8xl">*</span>
-
-                EXPRESS <span class="text-5xl md:text-8xl">*</span>
-              </span>
-            </div>
-          </div>
-          <div
-            id="marquee2"
-            class="marquee flex h-[30px] gap-2 overflow-hidden text-textcolor3"
-          >
-            <div
-              id="marquee_group3"
-              class="marquee_group flex min-w-full shrink-0 animate-[marquee2_25s_linear_infinite] items-center justify-between gap-2"
-            >
-              <span class="whitespace-nowrap text-4xl font-extrabold"
-                >THREEJS <span class="text-3xl">*</span> BARBAJS
-                <span class="text-3xl">*</span>
-              </span>
-              <span class="whitespace-nowrap text-4xl font-extrabold"
-                >GSAP <span class="text-3xl">*</span> TAILWIND
-                <span class="text-3xl">*</span>
-              </span>
-              <span class="whitespace-nowrap text-4xl font-extrabold"
-                >BOOTSTRAP <span class="text-3xl">*</span> JQUERY
-                <span class="text-3xl">*</span>
-              </span>
-              <span class="whitespace-nowrap text-4xl font-extrabold"
-                >REDUX <span class="text-3xl">*</span> WORKBOX
-                <span class="text-3xl">*</span>
-              </span>
-              <span class="whitespace-nowrap text-4xl font-extrabold"
-                >THREEJS <span class="text-3xl">*</span> BARBAJS
-                <span class="text-3xl">*</span>
-              </span>
-              <span class="whitespace-nowrap text-4xl font-extrabold"
-                >GSAP <span class="text-3xl">*</span> TAILWIND
-                <span class="text-3xl">*</span>
-              </span>
-              <span class="whitespace-nowrap text-4xl font-extrabold"
-                >BOOTSTRAP <span class="text-3xl">*</span> JQUERY
-                <span class="text-3xl">*</span>
-              </span>
-              <span class="whitespace-nowrap text-4xl font-extrabold"
-                >REDUX <span class="text-3xl">*</span> WORKBOX
-                <span class="text-3xl">*</span>
-              </span>
-            </div>
-
-            <div
-              id="marquee_group4"
-              class="marquee_group flex min-w-full shrink-0 animate-[marquee2_25s_linear_infinite] items-center justify-between gap-2"
-              aria-hidden="true"
-            >
-              <span class="whitespace-nowrap text-4xl font-extrabold"
-                >THREEJS <span class="text-3xl">*</span> BARBAJS
-                <span class="text-3xl">*</span>
-              </span>
-              <span class="whitespace-nowrap text-4xl font-extrabold"
-                >GSAP <span class="text-3xl">*</span> TAILWIND
-                <span class="text-3xl">*</span>
-              </span>
-              <span class="whitespace-nowrap text-4xl font-extrabold"
-                >BOOTSTRAP <span class="text-3xl">*</span> JQUERY
-                <span class="text-3xl">*</span>
-              </span>
-              <span class="whitespace-nowrap text-4xl font-extrabold"
-                >REDUX <span class="text-3xl">*</span> WORKBOX
-                <span class="text-3xl">*</span>
+              <div
+                id="marquee_group3"
+                class="marquee_group flex min-w-full shrink-0 animate-[marquee2_25s_linear_infinite] items-center justify-between gap-2"
+              >
                 <span class="whitespace-nowrap text-4xl font-extrabold"
                   >THREEJS <span class="text-3xl">*</span> BARBAJS
                   <span class="text-3xl">*</span>
@@ -318,17 +265,71 @@
                   >REDUX <span class="text-3xl">*</span> WORKBOX
                   <span class="text-3xl">*</span>
                 </span>
-              </span>
+                <span class="whitespace-nowrap text-4xl font-extrabold"
+                  >THREEJS <span class="text-3xl">*</span> BARBAJS
+                  <span class="text-3xl">*</span>
+                </span>
+                <span class="whitespace-nowrap text-4xl font-extrabold"
+                  >GSAP <span class="text-3xl">*</span> TAILWIND
+                  <span class="text-3xl">*</span>
+                </span>
+                <span class="whitespace-nowrap text-4xl font-extrabold"
+                  >BOOTSTRAP <span class="text-3xl">*</span> JQUERY
+                  <span class="text-3xl">*</span>
+                </span>
+                <span class="whitespace-nowrap text-4xl font-extrabold"
+                  >REDUX <span class="text-3xl">*</span> WORKBOX
+                  <span class="text-3xl">*</span>
+                </span>
+              </div>
+
+              <div
+                id="marquee_group4"
+                class="marquee_group flex min-w-full shrink-0 animate-[marquee2_25s_linear_infinite] items-center justify-between gap-2"
+                aria-hidden="true"
+              >
+                <span class="whitespace-nowrap text-4xl font-extrabold"
+                  >THREEJS <span class="text-3xl">*</span> BARBAJS
+                  <span class="text-3xl">*</span>
+                </span>
+                <span class="whitespace-nowrap text-4xl font-extrabold"
+                  >GSAP <span class="text-3xl">*</span> TAILWIND
+                  <span class="text-3xl">*</span>
+                </span>
+                <span class="whitespace-nowrap text-4xl font-extrabold"
+                  >BOOTSTRAP <span class="text-3xl">*</span> JQUERY
+                  <span class="text-3xl">*</span>
+                </span>
+                <span class="whitespace-nowrap text-4xl font-extrabold"
+                  >REDUX <span class="text-3xl">*</span> WORKBOX
+                  <span class="text-3xl">*</span>
+                  <span class="whitespace-nowrap text-4xl font-extrabold"
+                    >THREEJS <span class="text-3xl">*</span> BARBAJS
+                    <span class="text-3xl">*</span>
+                  </span>
+                  <span class="whitespace-nowrap text-4xl font-extrabold"
+                    >GSAP <span class="text-3xl">*</span> TAILWIND
+                    <span class="text-3xl">*</span>
+                  </span>
+                  <span class="whitespace-nowrap text-4xl font-extrabold"
+                    >BOOTSTRAP <span class="text-3xl">*</span> JQUERY
+                    <span class="text-3xl">*</span>
+                  </span>
+                  <span class="whitespace-nowrap text-4xl font-extrabold"
+                    >REDUX <span class="text-3xl">*</span> WORKBOX
+                    <span class="text-3xl">*</span>
+                  </span>
+                </span>
+              </div>
             </div>
           </div>
-        </div>
           <div class="backend flex flex-1 flex-col justify-end">
-            <p class="font-sofia text-[0.5rem] font-extrabold sm:text-sm pback">
+            <p class="pback font-sofia text-[0.5rem] font-extrabold sm:text-sm">
               Creation and intergration of APIs, <br />Relational and
               non-relational Databases, <br />NodeJS + Express, Web Services
               like FaaS, Serverless
             </p>
-            <p class="text-xs font-extrabold pback">
+            <p class="pback text-xs font-extrabold">
               (NODEJS, EXPRESS, CORS, MORGAN,
               <br />AXIOS, PARCEL, PROPTYPES, RECHARTS)
             </p>
@@ -342,9 +343,9 @@
           class="mx-auto flex max-w-7xl justify-center p-6 sm:justify-end"
         >
           <div id="socials" class="flex flex-row items-center gap-2">
-            <a href="" class="mx-5 "
+            <a href="" class="mx-5"
               ><svg
-                class="hover:fill-textcolor2 social"
+                class="social hover:fill-textcolor2"
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
                 y="0px"
@@ -370,7 +371,7 @@
             ></a>
             <a href="" class="mx-5"
               ><svg
-                class="hover:fill-textcolor2 social"
+                class="social hover:fill-textcolor2"
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
                 y="0px"

@@ -16,6 +16,18 @@ import { Modal } from "flowbite";
 
 // const modal = new Modal($targetEl, options);
 
+// const modal = document.querySelector("#modal");
+// const openModal = document.querySelector(".questionmark1");
+// const closeModal = document.querySelector(".closebutton");
+
+// openModal.addEventListener("click", () => {
+//   console.log("clicked");
+// });
+
+// closeModal.addEventListener("click", () => {
+//   modal.close();
+// });
+
 const hamburgerBtn = document.getElementById("hamburger-button");
 const mobileMenu = document.getElementById("mobile-menu");
 
@@ -480,6 +492,22 @@ barba.init({
         // modalBtn.addEventListener("click", function () {
         //   console.log("clicked");
         // });
+        // openModal.addEventListener("click", () => {
+        //   console.log("clicked");
+        // });
+
+        // closeModal.addEventListener("click", () => {
+        //   modal.close();
+        // });
+      },
+      enter() {
+        openModal.addEventListener("click", () => {
+          console.log("clicked");
+        });
+
+        closeModal.addEventListener("click", () => {
+          modal.close();
+        });
       },
     },
     {
