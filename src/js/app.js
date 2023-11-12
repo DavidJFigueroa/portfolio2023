@@ -246,7 +246,7 @@ const animationEnterAboutMe = (container) => {
   )
     .from(navElements, {
       opacity: 0,
-      yPercent: 101,
+      y: 101,
       duration: 0.05,
       stagger: 0.1,
     })
@@ -286,15 +286,15 @@ const animationEnterSkills = (container) => {
       stagger: 0.1,
     })
     .from(".front", {
-      x: 800,
+      xPercent: 101,
       duration: 0.2,
     })
     .from(".back", {
-      x: -800,
+      xPercent: -101,
       duration: 0.2,
     })
-    .from(".pfront", { x: 800, stagger: 0.1 }, "-=0.5")
-    .from(".pback", { x: -800, stagger: 0.1 }, "-=0.5")
+    .from(".pfront", { xPercent: 101, stagger: 0.1 }, "-=0.5")
+    .from(".pback", { xPercent: -101, stagger: 0.1 }, "-=0.5")
     .from(
       ".social",
       {
@@ -333,7 +333,7 @@ const animationEnterProjects = (container) => {
     })
 
     .from(".outline-title-rosa", {
-      x: -1200,
+      xPercent: -151,
       duration: 0.4,
     })
     .from(".projectdiv", {
@@ -377,11 +377,11 @@ const animationEnterContact = (container) => {
       stagger: 0.1,
     })
     .from(".text-container", {
-      x: 800,
+      xPercent: 151,
       duration: 0.2,
     })
     .from(".contact-container", {
-      x: -800,
+      xPercent: -151,
       duration: 0.2,
     })
     .from(
@@ -586,7 +586,17 @@ barba.init({
       namespace: "projects",
       beforeEnter() {
         const video = document.querySelector(".bg-video video");
-        video.play();
+        if (video) {
+          video.play();
+        }
+        if (isMobile()) {
+          document.body.classList.remove("overflow-hidden");
+        }
+      },
+      beforeLeave() {
+        if (isMobile()) {
+          document.body.classList.add("overflow-hidden");
+        }
       },
     },
     {
