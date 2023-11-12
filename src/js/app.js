@@ -61,7 +61,7 @@ const squareContainer = document.querySelector(".square-container");
 
 function fillSquares() {
   const desiredSquareSize = 80; // Adjust as needed
-  const durationMobile = 0.005;
+  const durationMobile = 0.008;
   const durationDesktop = 0.001;
 
   const screenWidth =
@@ -102,7 +102,7 @@ function fillSquares() {
 }
 
 function clearSquares() {
-  const durationMobile = 0.015;
+  const durationMobile = 0.027;
   const durationDesktop = 0.003;
 
   const squares = document.querySelectorAll(".square");
@@ -223,7 +223,11 @@ const animationEnterAboutMe = (container) => {
       duration: 0.3,
     })
     .from(".outline-title-yellow", {
-      xPercent: 151,
+      xPercent: 200,
+      duration: 0.3,
+    })
+    .from(".cvbutton", {
+      yPercent: -501,
       duration: 0.3,
     })
 
@@ -277,8 +281,6 @@ const animationEnterSkills = (container) => {
 
 const animationEnterProjects = (container) => {
   const navElements = document.querySelectorAll(".navelement");
-  const images = container.querySelectorAll(".image");
-
   const tl = gsap.timeline();
 
   tl.fromTo(
@@ -323,7 +325,6 @@ const animationEnterProjects = (container) => {
 
 const animationEnterContact = (container) => {
   const navElements = document.querySelectorAll(".navelement");
-
   const tl = gsap.timeline();
 
   tl.fromTo(
@@ -382,7 +383,6 @@ const animationEnterContact = (container) => {
 const animationEnterProject = (container) => {
   const navElements = document.querySelectorAll(".navelement");
   const elements = document.querySelectorAll(".element");
-
   const tl = gsap.timeline();
 
   tl.fromTo(
@@ -554,7 +554,7 @@ barba.init({
       namespace: "projects",
       beforeEnter() {
         const video = document.querySelector(".bg-video video");
-        if (video) {
+        if (!isMobile) {
           video.play();
         }
         if (isMobile()) {
