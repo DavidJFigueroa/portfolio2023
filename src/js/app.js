@@ -5,7 +5,6 @@ import { initScene1 } from "./scene1";
 import { initScene2 } from "./scene2";
 import { initScene3 } from "./scene3";
 import { initScene4 } from "./scene4";
-import { Modal } from "flowbite";
 
 // const $targetEl = document.getElementById('questionMark');
 
@@ -60,40 +59,9 @@ function isMobile() {
 
 const squareContainer = document.querySelector(".square-container");
 
-// function fillSquares() {
-//   const desiredSquareSize = 80; // Adjust as needed
-
-//   const screenWidth = window.innerWidth;
-//   const numCols = Math.floor(screenWidth / desiredSquareSize);
-//   const numRows = Math.ceil(screenWidth / desiredSquareSize);
-
-//   squareContainer.style.gridTemplateColumns = `repeat(${numCols}, 1fr)`;
-//   squareContainer.style.gridTemplateRows = `repeat(${numRows}, 1fr)`;
-
-//   const totalSquares = numCols * numRows;
-
-//   for (let i = 0; i < totalSquares; i++) {
-//     const square = document.createElement("div");
-//     square.classList.add("square");
-//     squareContainer.appendChild(square);
-//   }
-
-//   const squares = Array.from(document.querySelectorAll(".square"));
-//   const randomSquares = gsap.utils.shuffle(squares);
-
-//   const timeline = gsap.timeline({
-//     defaults: { duration: 0.0005, ease: "expo.out" },
-//   });
-//   randomSquares.forEach((square, index) => {
-//     timeline.to(square, { opacity: 1 }, index * 0.001);
-//   });
-
-//   return timeline;
-// }
-
 function fillSquares() {
   const desiredSquareSize = 80; // Adjust as needed
-  const durationMobile = 0.01;
+  const durationMobile = 0.005;
   const durationDesktop = 0.001;
 
   const screenWidth =
@@ -134,7 +102,7 @@ function fillSquares() {
 }
 
 function clearSquares() {
-  const durationMobile = 0.03;
+  const durationMobile = 0.015;
   const durationDesktop = 0.003;
 
   const squares = document.querySelectorAll(".square");
