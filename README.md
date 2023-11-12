@@ -4,7 +4,7 @@
 
 This documentation provides an overview of the structure and functionality of the Portfolio 2023 GitHub project. The portfolio is a multipage site developed with Three.js, GSAP (GreenSock Animation Platform), and Barba.js. The main feature on the index.html page allows users to create random-sized spheres by clicking a button, along with the ability to change the camera angle and zoom in and out.
 
-![Alt text]("https://github.com/DavidJFigueroa/portfolio2023/assets/122026800/8a2b999e-eed3-4260-8ba4-4eaccf283476")
+![Screenshot]("https://github.com/DavidJFigueroa/portfolio2023/assets/122026800/8a2b999e-eed3-4260-8ba4-4eaccf283476.png")
 
 
 ## Folder Structure
